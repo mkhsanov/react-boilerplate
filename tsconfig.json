@@ -1,19 +1,31 @@
 {
   "compilerOptions": {
-    "target": "ES6",                                  
-    "lib": [
-      "DOM",
-      "ESNext"
-    ],                                        
-    "jsx": "react-jsx",                               
-    "module": "ESNext",                               
-    "moduleResolution": "Node",                     
-    "types": ["react", "react-dom", "@types/react", "@types/react-dom"],                                      
-    "resolveJsonModule": true,                       
-    "isolatedModules": true,                          
-    "esModuleInterop": true,                            
-    "forceConsistentCasingInFileNames": true,            
-    "strict": true,                                      
-    "skipLibCheck": true                                
+    "target": "ES6",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "types": ["react", "react-dom", "@types/react", "@types/react-dom", "node"],
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": "src",
+    "paths": {
+      "@root/*": ["src/*"],
+      "@styles/*": ["src/styles/*"],
+      "@components/*": ["../src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@providers/*": ["src/providers/*"],
+      "@machines/*": ["src/machines/*"],
+      "@services/*": ["src/services/*"],
+      "@sections/*": ["src/sections/*"],
+      "@assets/*": ["src/assets/*"],
+      "@utils/*": ["src/utils/*"],
+      "@routing/*": ["src/routing/*"],
+      "@third-party/*": ["src/third-party/*"]
+    }
   }
 }
