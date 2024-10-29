@@ -3,6 +3,7 @@
     "browser": true,
     "es2021": true
   },
+  "ignorePatterns": ["webpack"],
   "settings": {
     "react": {
       "version": "detect"
@@ -41,16 +42,33 @@
           "error",
           {
             "groups": [
+              ["./wdyr"],
               // `react` first, `next` second, then packages starting with a character
               ["^react$", "^next", "^[a-z]"],
-              // Packages starting with `@`
-              ["^@"],
+              // Packages starting with `@root`
+              ["^@root"],
+              // Packages starting with `@routing`
+              ["^@routing"],
+              // Packages starting with `@providers`
+              ["^@providers"],
+              // Packages starting with `@sections`
+              ["^@sections"],
+              // Packages starting with `@components`
+              ["^@utils"],
+              // Packages starting with `@utils`
+              ["^@components"],
+              // Packages starting with `@third-party`
+              ["^@third-party"],
               // Packages starting with `~`
               ["^~"],
               // Imports starting with `../`
               ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
               // Imports starting with `./`
               ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+              // Imports starting with `type`
+              ["^type"],
+              // Packages starting with `@`
+              ["^@assets"],
               // Style imports
               ["^.+\\.s?css$"],
               // Side effect imports

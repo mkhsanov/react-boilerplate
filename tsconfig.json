@@ -14,18 +14,18 @@
     "skipLibCheck": true,
     "baseUrl": "src",
     "paths": {
-      "@root/*": ["src/*"],
-      "@styles/*": ["src/styles/*"],
+      "@root/*": ["../src/*"],
+      "@styles/*": ["../src/styles/*"],
       "@components/*": ["../src/components/*"],
-      "@pages/*": ["src/pages/*"],
-      "@providers/*": ["src/providers/*"],
-      "@machines/*": ["src/machines/*"],
-      "@services/*": ["src/services/*"],
-      "@sections/*": ["src/sections/*"],
-      "@assets/*": ["src/assets/*"],
-      "@utils/*": ["src/utils/*"],
-      "@routing/*": ["src/routing/*"],
-      "@third-party/*": ["src/third-party/*"]
+      "@pages/*": ["../src/pages/*"],
+      "@providers/*": ["../src/providers/*"],
+      "@machines/*": ["../src/machines/*"],
+      "@services/*": ["../src/services/*"],
+      "@sections/*": ["../src/sections/*"],
+      "@assets/*": ["../src/assets/*"],
+      "@routing/*": ["../src/routing/*"],
+      "@utils/*": ["../src/utils/*"],
+      "@third-party/*": ["../src/third-party/*"]
     }
   }
 }
