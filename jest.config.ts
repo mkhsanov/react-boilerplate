@@ -7,14 +7,6 @@ module.exports = {
   transform: {
     '.(ts|tsx)': 'ts-jest',
   },
-  coveragePathIgnorePatterns: [
-    '/node_modules/',
-    '/coverage',
-    'package.json',
-    'package-lock.json',
-    'reportWebVitals.ts',
-    'setupTests.ts',
-    'index.tsx',
-  ],
+  coveragePathIgnorePatterns: ['/node_modules/', '/coverage', 'package.json', 'package-lock.json'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 };
