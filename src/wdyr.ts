@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === 'development') {
   whyDidYouRender(React, {
     trackAllPureComponents: true,
     logOnDifferentValues: true,
-    collapseGroups: true,
+    collapseGroups: false,
     trackHooks: true,
   });
 }
